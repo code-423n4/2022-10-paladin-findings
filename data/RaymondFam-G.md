@@ -155,7 +155,7 @@ SLOADs are cost 100 gas each after the 1st one whereas MLOADs/MSTOREs only incur
 https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L240-L253
 
 ```
-        IBoostV2 delegationBoost = delegationBoost
+        IBoostV2 delegationBoost = delegationBoost;
 ```
 Similarly, `pledgeAvailableRewardAmounts[pledgeId]` should be cached and have the following code block refactored to:
 
@@ -186,7 +186,7 @@ https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.s
 https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L625-L631
 
 ```
-        unit256 protocalFeeRatio = protocalFeeRatio
+        unit256 protocalFeeRatio = protocalFeeRatio;
 ```
 `chestAddress` should likewise be cached in the following code block:
 
