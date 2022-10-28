@@ -13,3 +13,6 @@ A few improvements can be made to enhance the readability and trustworthiness of
     pledges[i].pledgeOwner
 ```
 
+3. both functions, retrievePledgeRewards() and closePledge() have similar functionality: close the Pledge and retrieve all remaining reward ammount. Suggestion: delete one of them or refactor so that they both call another common internal function
+
+
