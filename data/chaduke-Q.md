@@ -15,4 +15,6 @@ A few improvements can be made to enhance the readability and trustworthiness of
 
 3. both functions, retrievePledgeRewards() and closePledge() have similar functionality: close the Pledge and retrieve all remaining reward ammount. Suggestion: delete one of them or refactor so that they both call another common internal function
 
+4. https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L599
+The transfer of ChestAddress needs to be done in two steps to avoid input error: 1) submit a new pending chest; 2) the new pending chest accept the proposal and accept it become the new chest address. 
 
