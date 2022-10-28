@@ -146,3 +146,53 @@ https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.s
 https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L636
 https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L643
 https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L653
+
+## State Variables Repeatedly Read Should be Cached 
+SLOADs are cost 100 gas each after the 1st one whereas MLOADs/MSTOREs only incur 3 gas each. As such, storage values read multiple times should be cached in the stack memory the first time (costing only 1 SLOAD) and then re-read from this cache to avoid multiple SLOADs.
+
+`delegationBoost` should be cached as follows and inserted before line 240:
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L240-L253
+
+```
+        IBoostV2 delegationBoost = delegationBoost
+```
+Similarly, `pledgeAvailableRewardAmounts[pledgeId]` should be cached and have the following code block refactored to:
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L267-L268
+
+```
+        uint256 remainingAmount = pledgeAvailableRewardAmounts[pledgeId];
+
+        if(rewardAmount > remainingAmount) revert Errors.RewardsBalanceTooLow();
+        remainingAmount -= rewardAmount;
+```
+Strangely, `pledgeAvailableRewardAmounts[pledgeId]` has been cached in the following two code blocks but was not fully utilized:
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L466-L473
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L502-L506
+
+The cached variable should logically be used in lines 473 and 506.
+
+`minAmountRewardToken` should likewise be cached in the following four instances:
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L312-L313
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L526-L530
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L572-L575
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L587-L589
+
+`protocalFeeRatio' should also be cached as follows and inserted before line 625:
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L625-L631
+
+```
+        unit256 protocalFeeRatio = protocalFeeRatio
+```
+`chestAddress` should likewise be cached in the following code block:
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L599-L605
+
+`minTargetVotes` should likewise be cached in the following code block:
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L612-L618
+
