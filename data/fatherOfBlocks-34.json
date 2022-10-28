@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "fatherOfBlocks",
+  "risk": "2",
+  "title": "Two due to lack of validations in the constructor",
+  "issueId": 34,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/34"
+}
