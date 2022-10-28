@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "rvierdiiev",
+  "risk": "2",
+  "title": "Malicious or hacked admin can drain all tokens",
+  "issueId": 17,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/17"
+}
