@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "dic0de",
+  "risk": "2",
+  "title": "recoverERC20 can be used by the owner as a backdoor to retrieve the rewardsToken",
+  "issueId": 40,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/40"
+}
