@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "codingsh",
+  "risk": "2",
+  "title": "Reentrancy Vulnerabilities, Incorret ERC20 interface, Divide before Multiply, Dangerous Strict Equalities and Uninitialized local variables ",
+  "issueId": 36,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/36"
+}
