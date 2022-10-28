@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "rvierdiiev",
+  "risk": "2",
+  "title": "Rewards distribution get corrupted once increasePledgeRewardPerVote function is called",
+  "issueId": 24,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/24"
+}
