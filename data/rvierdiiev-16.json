@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "rvierdiiev",
+  "risk": "2",
+  "title": "Admin can withdraw whitelisted token from the contract if token is two address",
+  "issueId": 16,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/16"
+}
