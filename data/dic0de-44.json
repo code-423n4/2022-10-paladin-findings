@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "dic0de",
+  "risk": "2",
+  "title": "`removeRewardToken` can be used as a backdoor to retrieve `rewardsToken` via `recoverERC20`",
+  "issueId": 44,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/44"
+}
