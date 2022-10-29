@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "cccz",
+  "risk": "2",
+  "title": "retrievePledgeRewards/closePledge are not available when the system is paused",
+  "issueId": 58,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/58"
+}
