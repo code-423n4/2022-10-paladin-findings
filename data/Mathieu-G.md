@@ -1,3 +1,26 @@
+# Define Uneditable Variable As Constant
+In the `WardenPledge.sol` contract, the `minDelegationTime` variable is not modifiable and is defined as a simple variable whereas it could be defined as a constant in order to save some gas.
+
+Here is the recommendation at lines 21 : https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L21
+
+    // Constants :
+    uint256 public constant UNIT = 1e18;
+    uint256 public constant MAX_PCT = 10000;
+    uint256 public constant WEEK = 7 * 86400;
+    uint256 public constant MIN_DELEGATION_TIME = 1 weeks;
+
+Therefore, when this variable is called later in contract's functions at lines 320 and 386, some changes are required:
+- https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L320
+- https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L386
+
+As follows:
+
+    // L320
+    if(vars.duration < MIN_DELEGATION_TIME) revert Errors.DurationTooShort();
+
+    // L386
+    if(addedDuration < MIN_DELEGATION_TIME) revert Errors.DurationTooShort();
+
 # Tight Variable Packing
 In Solidity, we can pack multiple contract and struct variables into the same 32 bytes slot in storage. With this pattern, we can greatly optimize gas consumption when storing or loading statically-sized variables.
 
@@ -45,3 +68,5 @@ With that being applied, we also must change the lines where this function is ca
 Finally, the revert error name must be changed in this file: https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/utils/Errors.sol#L46
 
     error NumberExceed88Bits();
+
+## Contract Variables
