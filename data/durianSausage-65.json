@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "durianSausage",
+  "risk": "2",
+  "title": "M01: RETURN VALUES OF TRANSFER()/TRANSFERFROM() NOT CHECKED",
+  "issueId": 65,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/65"
+}
