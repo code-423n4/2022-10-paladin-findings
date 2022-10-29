@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "cccz",
+  "risk": "2",
+  "title": "Due to loss of precision, targetVotes may not reach",
+  "issueId": 59,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/59"
+}
