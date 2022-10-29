@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "Chom",
+  "risk": "2",
+  "title": "Decay in boosted reward cause reward pool to be drained before reaching targetVotes.",
+  "issueId": 92,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/92"
+}
