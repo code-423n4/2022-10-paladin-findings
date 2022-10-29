@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "8olidity",
+  "risk": "2",
+  "title": "The chestAddress case is not considered as address(this)",
+  "issueId": 76,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/76"
+}
