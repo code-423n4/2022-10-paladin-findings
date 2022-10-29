@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "Chom",
+  "risk": "2",
+  "title": "Pledge may be out of reward due to the decay in veCRV balance. targetVotes is never reached.",
+  "issueId": 91,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/91"
+}
