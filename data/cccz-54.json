@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "cccz",
+  "risk": "2",
+  "title": "The owner can call removeRewardToken and then call recoverERC20 to rug the reward tokens",
+  "issueId": 54,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/54"
+}
