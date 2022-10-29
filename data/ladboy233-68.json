@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "ladboy233",
+  "risk": "2",
+  "title": "Owner can transfer all ERC20 reward token out using function recoverERC20",
+  "issueId": 68,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/68"
+}
