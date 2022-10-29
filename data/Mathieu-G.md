@@ -21,6 +21,8 @@ As follows:
     // L386
     if(addedDuration < MIN_DELEGATION_TIME) revert Errors.DurationTooShort();
 
+Finally, the previous variable declared at line 79 can be removed : https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L79
+
 # Tight Variable Packing
 In Solidity, we can pack multiple contract and struct variables into the same 32 bytes slot in storage. With this pattern, we can greatly optimize gas consumption when storing or loading statically-sized variables.
 
