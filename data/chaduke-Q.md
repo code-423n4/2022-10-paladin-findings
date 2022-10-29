@@ -19,3 +19,5 @@ A few improvements can be made to enhance the readability and trustworthiness of
 The transfer of ChestAddress needs to be done in two steps to avoid input error: 1) submit a new pending chest; 2) the new pending chest accept the proposal and accept it become the new chest address. 
 
 5. In the function removeRewardToken(), one needs to consider if there are some pledges that use this token as the reward token and if yes, then might need to wait for these pledges to close before removing the token from the contract. 
+
+6. Consider to call RecoverERC20() inside RemoveRewardToken() so that ERC20 will always be recovered while it is being removed. 
