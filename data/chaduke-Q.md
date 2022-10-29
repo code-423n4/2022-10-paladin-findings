@@ -21,3 +21,6 @@ The transfer of ChestAddress needs to be done in two steps to avoid input error:
 5. In the function removeRewardToken(), one needs to consider if there are some pledges that use this token as the reward token and if yes, then might need to wait for these pledges to close before removing the token from the contract. 
 
 6. Consider to call RecoverERC20() inside RemoveRewardToken() so that ERC20 will always be recovered while it is being removed. 
+
+7. The full impact of function updateRewardToken() has not been fully implemented or documented: does the new minRewardPerSecond change existing pledges? If not, then it should be documented. 
+
