@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "ladboy233",
+  "risk": "2",
+  "title": "Creator can create pledge with infinite large number of endTimestamp to lock user's vote power.",
+  "issueId": 79,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/79"
+}
