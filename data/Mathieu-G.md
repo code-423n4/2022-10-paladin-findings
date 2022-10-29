@@ -34,7 +34,7 @@ Here are the bytes used per these types:
 - `uint64` = 8 bytes
 - `bool` = 1 
 
-So, these 3 variables are using a total of 29 bytes (20 + 8 + 1). However, we can easily make them use a full 32 bytes storage slot by changing the `uint64` to an `uint88` (11 bytes) => 20 + 11 + 1 = 32.
+So, these 3 variables are using a total of 29 bytes (20 + 8 + 1). However, we can easily make them use a full 32 bytes storage slot by changing the `uint64` to an `uint88` (11 bytes) => 20 + 11 + 1 = 32. With this, the EVM doesn't have to fill the remaining bytes anymore, so we save gas.
 
 The new Struct would look like this:
 
