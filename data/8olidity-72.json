@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "8olidity",
+  "risk": "2",
+  "title": "recoverERC20() Unable to collect processing fee token",
+  "issueId": 72,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/72"
+}
