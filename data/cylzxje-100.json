@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "cylzxje",
+  "risk": "3",
+  "title": "`rewardAmount` and `totalRewardAmount` break 18 decimals logic by `/ UNIT`",
+  "issueId": 100,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/100"
+}
