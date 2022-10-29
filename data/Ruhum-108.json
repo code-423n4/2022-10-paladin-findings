@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "Ruhum",
+  "risk": "2",
+  "title": "Contract doesn't support fee-on-transfer tokens",
+  "issueId": 108,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/108"
+}
