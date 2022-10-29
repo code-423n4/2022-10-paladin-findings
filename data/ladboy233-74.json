@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "ladboy233",
+  "risk": "2",
+  "title": "Fee-on-transfer token not supported as reward token because the totalRewardAmount calculated may be different from the reward token amount we received.",
+  "issueId": 74,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/74"
+}
