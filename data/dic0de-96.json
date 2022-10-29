@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "dic0de",
+  "risk": "3",
+  "title": "Voting Power double count when the `pledge.receiver` delegates to their own pledge.",
+  "issueId": 96,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/96"
+}
