@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "chaduke",
+  "risk": "3",
+  "title": "Incorrectd implementation for the increasePledgeRewardPerVote() function",
+  "issueId": 49,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/49"
+}
