@@ -24,3 +24,4 @@ The transfer of ChestAddress needs to be done in two steps to avoid input error:
 
 7. The full impact of function updateRewardToken() has not been fully implemented or documented: does the new minRewardPerSecond change existing pledges? If not, then it should be documented. 
 
+8. Consider define a CreatorOnly modifier for those pledge functions that can be called only by the creator. 
