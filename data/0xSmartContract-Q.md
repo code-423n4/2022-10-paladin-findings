@@ -3,23 +3,23 @@
 ### Low Risk Issues List
 | Number |Issues Details|Context|
 |:----:|:-------|:--:|
-|[L-01]| Use `safeSetgov` instead of ```setGov``` function | 1 |
-|[L-02]| In Market.sol, `gov` address value, critical 0 address control is missing | 1 |
+|[L-01]| There is no 0 check for very critical addresses in the constructor| 3 |
+|[L-02]| Very critical `owner` privileges can cause complete destruction of the project in a possible privateKey exploit | 1 |
 
 Total 2 issues
 
 ### Non-Critical Issues List
 | Number |Issues Details|Context|
 |:--:|:-------|:--:|
-| [NC-01 ]| Insufficient coverage | |
-| [NC-02] |`0 address` check |10|
-| [NC-03] | `Function writing` that does not comply with the `Solidity Style Guide` | All contracts |
-| [NC-04] | Compliance with Solidity Style rules in Constant expressions | 1 |
-| [NC-05] | Omissions in Events | 2 |
-| [NC-06] | Need Fuzzing test| 7 |
-| [NC-07] | Use a more recent version of Solidity| All contracts |
-| [NC-08] |Solidity compiler optimizations can be problematic | All contracts |
-| [NC-09] |Avoid whitespaces while declaring mapping variables  | 4 |
+| [NC-01 ]| `Function writing` that does not comply with the `Solidity Style Guide` |1 |
+| [NC-02] |Need Fuzzing test|1|
+| [NC-03] |Use a more recent version of Solidity | 1|
+| [NC-04] |Solidity compiler optimizations can be problematic | 1 |
+| [NC-05] |NatSpec is missing | 1 |
+| [NC-06] |For functions, follow Solidity standard naming conventions| 1 |
+| [NC-07] |Missing Event for Critical Parameters Change | 2|
+| [NC-08] |Add NatSpec Mapping comment|4 |
+| [NC-09] |Same Contract imported twice | 1 |
 
 Total 9 issues
 
