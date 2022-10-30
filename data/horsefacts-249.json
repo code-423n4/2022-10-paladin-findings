@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "horsefacts",
+  "risk": "2",
+  "title": "Malicious owner can steal reward tokens",
+  "issueId": 249,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/249"
+}
