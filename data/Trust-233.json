@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "Trust",
+  "risk": "2",
+  "title": "Excessive owner privilege - can freeze pledge creator's funds after pledging period completed.",
+  "issueId": 233,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/233"
+}
