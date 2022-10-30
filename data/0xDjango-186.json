@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "0xDjango",
+  "risk": "2",
+  "title": "`extendPledge()` and `increasePledgeRewardPerVote()` likely require much more rewards transferred than necessary",
+  "issueId": 186,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/186"
+}
