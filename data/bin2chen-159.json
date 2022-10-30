@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "bin2chen",
+  "risk": "2",
+  "title": "pledge() / ExtendPledge()  did not detect whether RewardToken was removed.",
+  "issueId": 159,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/159"
+}
