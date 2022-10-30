@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "Aymen0909",
+  "risk": "2",
+  "title": "Current `votesDifference` is not checked when extending a pledge or increasing the `rewardPerVote`",
+  "issueId": 280,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/280"
+}
