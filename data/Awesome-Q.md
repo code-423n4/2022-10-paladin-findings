@@ -1,6 +1,16 @@
+## `block.timestamp` is unreliable
+
+Using block.timestamp as part of the time checks could be slightly modified by miners/validators to favor them in contracts that contain logic heavily dependent on them.
+
+Consider this problem and warn users that a scenario like this could occur. If the change of timestamps will not affect the protocol in any way, consider documenting the reasoning and writing tests enforcing that these guarantees will be preserved even if the code changes in the future.
+
+There are 8 instances of this issue:
+
+[Line 229](https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L229), [Line 237](https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L237), [Line 319](https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L319), [Line 380](https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L380), [Line 426](https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L426), [Line 430](https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L430), [Line 463](https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L463), [Line 496](https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L496)
+
 ## Typos
 
-Stick to the proper spelling or else otherwise, it will make it decrease readability
+Stick to the proper spelling otherwise, it will make it decrease readability
 
 There are 9 instances of this issue consider making the following changes:
 
