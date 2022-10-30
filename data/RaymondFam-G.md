@@ -196,3 +196,7 @@ https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.s
 
 https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L612-L618
 
+## Unused Event
+`IncreasePledgeTargetVotes()` has not been found emitting in `WardenPledge.sol`. Consider emitting it where appropriate or having it removed from the contract.
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L96
