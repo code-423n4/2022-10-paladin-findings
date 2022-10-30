@@ -31,3 +31,8 @@ There are [units](https://docs.soliditylang.org/en/latest/units-and-global-varia
 File: WardenPledge.sol
 24:     uint256 public constant WEEK = 7 * 86400;
 ```
+
+# [NC] LINE WIDTH
+
+Keep line width to max 120 characters for better readability.
+
