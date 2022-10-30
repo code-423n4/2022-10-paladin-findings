@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "corerouter",
+  "risk": "2",
+  "title": "ClosePledge() event is not emitted when setting the Pledge as closed.",
+  "issueId": 125,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/125"
+}
