@@ -5,10 +5,10 @@
 | [L-03] | Incomplete documentation | 13 |
 | [L-04] | Wrong usage of NatSpec format comments | 24 |
 | [N-01] | A constant should be used instead of a magic value | 1 |
-| [N-02] | Documentation on obvious functions may be redundant | 1 |
+| [N-02] | Documentation on obvious functions may be redundant | 2 |
 | [N-03] | Use native time unit rather than defining constants | 1 |
 | [N-04] | Events can use `indexed` fields for easier querying | 1 |
-| [N-05] | The `nonReentrant` modifier should occur before all other modifiers | 1 |
+| [N-05] | The `nonReentrant` modifier should occur before all other modifiers | 7 |
 
 ## [L-01] Typo/grammar mistakes
 
@@ -144,6 +144,12 @@ https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c72
 
 ## [N-05] The `nonReentrant` modifier should occur before all other modifiers
 
-This is a best-practice to protect against reentrancy in other modifiers
+This is a best-practice to protect against reentrancy in other modifiers. Applies to all functions with this modifier.
 
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L195
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L206
 https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L307
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L373
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L419
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L456
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L488
