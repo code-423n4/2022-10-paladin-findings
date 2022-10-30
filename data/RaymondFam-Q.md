@@ -117,7 +117,12 @@ https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.s
 https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L589
 
 ## Un-indexed Parameters in Events
-Consider indexing parameters for events, serving as logs filter when looking for specifically wanted data. Up to three parameters in an event function can receive the attribute `indexed` which will cause the respective arguments to be treated as log topics instead of data. There are the instances entailed:
+Consider indexing parameters for events, serving as logs filter when looking for specifically wanted data. Up to three parameters in an event function can receive the attribute `indexed` which will cause the respective arguments to be treated as log topics instead of data. There are two instances entailed:
 
 https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L85-L92
 https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L115-L119
+
+## Non-descriptive Comments
+Comments should be brief but they should adequately portray the intended purposes where possible. All comments associated with events in the contract are found to be incomplete ending with `... xx */`.
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L84-L119
