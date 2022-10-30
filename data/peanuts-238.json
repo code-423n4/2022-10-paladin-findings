@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "peanuts",
+  "risk": "2",
+  "title": "User does not benefit if pledgeOwner increases Pledge Rewards by calling increasePledgeRewardPerVote()",
+  "issueId": 238,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/238"
+}
