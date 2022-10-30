@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "jayphbee",
+  "risk": "2",
+  "title": "Pledge can be silently closed by calling retrievePledgeRewards.",
+  "issueId": 111,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/111"
+}
