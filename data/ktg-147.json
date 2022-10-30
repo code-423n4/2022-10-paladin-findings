@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "ktg",
+  "risk": "3",
+  "title": "Pledge creator can increase their pledges' reward per vote without paying in edge cases",
+  "issueId": 147,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/147"
+}
