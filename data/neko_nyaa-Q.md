@@ -6,6 +6,9 @@
 | [L-04] | Wrong usage of NatSpec format comments | 24 |
 | [N-01] | A constant should be used instead of a magic value | 1 |
 | [N-02] | Documentation on obvious functions may be redundant | 1 |
+| [N-03] | Use native time unit rather than defining constants | 1 |
+| [N-04] | Events can use `indexed` fields for easier querying | 1 |
+| [N-05] | The `nonReentrant` modifier should occur before all other modifiers | 1 |
 
 ## [L-01] Typo/grammar mistakes
 
@@ -66,8 +69,6 @@ All of the events (13 in total) have incomplete documentation
 
 ## [L-04] Wrong usage of NatSpec format comments
 
-The codebase seems to be following [NatSpec Format](https://docs.soliditylang.org/en/v0.8.17/natspec-format.html) documentation, which is the most popular choice of formatting in Solidity codebases. However, much of it is currently being used wrongly.
-
 In general, `@notice` is meant to be a brief description of the function (i.e. what it's supposed to do, in one line), while `@dev` is meant to provide devs with clarifications, or some notes on function behavior that one might not expect, or anything noteworthy in general.
 
 The report below points out all found instances of tags misusage, along with recommended mitigation. There are **four** distinct issues in total listed:
@@ -122,3 +123,27 @@ However this is an opinion-based non-risk finding, the decision should be ultima
 
 https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L634
 https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L641
+
+## [N-03] Use native time unit rather than defining constants
+
+The line below can be changed to `7 weeks`
+
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L24
+
+This is also for consistency with how `minDelegationTime` is defined, as shown below
+
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L79
+
+## [N-04] Events can use `indexed` fields for easier querying
+
+Generally it is a good idea to place `indexed` fields for database-like data, where it is expected that such data will be queried.
+
+Specifically, the event `NewPledge` would be extremely helpful to contain `indexed` fields for `creator` and `receiver`, where such values can be expected to be queried by user when needed (e.g. when a receiver wants to query who has pledged them or otherwise).
+
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L85-L92
+
+## [N-05] The `nonReentrant` modifier should occur before all other modifiers
+
+This is a best-practice to protect against reentrancy in other modifiers
+
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L307
