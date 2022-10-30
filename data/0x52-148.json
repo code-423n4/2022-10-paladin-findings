@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "0x52",
+  "risk": "2",
+  "title": "Malicious/compromised owner can rug users by delisting all reward tokens and using recoverERC20 to steal them all",
+  "issueId": 148,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/148"
+}
