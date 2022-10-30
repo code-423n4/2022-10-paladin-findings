@@ -19,3 +19,9 @@ https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c72
 fo -> of
 
 https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L453
+
+taget -> target
+balacne -> balance
+
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L292
+
