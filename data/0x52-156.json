@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "0x52",
+  "risk": "2",
+  "title": "Setting protocol fee to 0 will break reward tokens that don't support 0 transfers ",
+  "issueId": 156,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/156"
+}
