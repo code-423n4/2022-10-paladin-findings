@@ -23,3 +23,11 @@ Events descriptions is not finished it will make the contract less prepared
 /** @notice Event emitted when xx */
 ```
 
+# [NC] NUMERIC VALUES HAVING TO DO WITH TIME SHOULD USE TIME UNITS FOR READABILITY
+
+There are [units](https://docs.soliditylang.org/en/latest/units-and-global-variables.html#time-units) for seconds, minutes, hours, days, and weeks
+
+```
+File: WardenPledge.sol
+24:     uint256 public constant WEEK = 7 * 86400;
+```
