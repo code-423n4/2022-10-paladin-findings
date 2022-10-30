@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "RedOneN",
+  "risk": "2",
+  "title": "The lack of check on pledged \"amount\" might result in no reward for the user although he provided pledge.",
+  "issueId": 126,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/126"
+}
