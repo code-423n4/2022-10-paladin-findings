@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "0x52",
+  "risk": "2",
+  "title": "WardenPledge accidentally inherits Ownable instead of Owner which removes an important safeguard without sponsor knowledge",
+  "issueId": 161,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/161"
+}
