@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "0xDecorativePineapple",
+  "risk": "2",
+  "title": "Wrong reward calculation when reward token's decimals are different than 18",
+  "issueId": 214,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/214"
+}
