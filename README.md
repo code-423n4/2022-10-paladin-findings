@@ -8,8 +8,6 @@ Unless otherwise discussed, this repo will be made public after contest completi
 
 ## Contest findings are submitted to this repo
 
-Typically most findings come in **on the last day of the contest**, so don't be alarmed at all if there's nothing here but crickets until the end of the contest.
-
 As a sponsor, you have four critical tasks in the contest process:
 
 1. Handle duplicate issues.
