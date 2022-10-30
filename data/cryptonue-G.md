@@ -6,3 +6,12 @@ When fetching data from a storage location, assigning the data to a memory varia
 File: WardenPledge.sol
 227:         Pledge memory pledgeParams = pledges[pledgeId];
 ```
+
+# DIVISION BY TWO SHOULD USE BIT SHIFTING
+
+`<x> / 2` is the same as `<x> >> 1`. While the compiler uses the `SHR` opcode to accomplish both, the version that uses division incurs an overhead of 20 gas due to `JUMP`s to and from a compiler utility function that introduces checks which can be avoided by using `unchecked {}` around the division by two
+
+```
+File: WardenPledge.sol
+263:         uint256 totalDelegatedAmount = ((bias * boostDuration) + bias) / 2;
+```
