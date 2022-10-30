@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "Dravee",
+  "risk": "2",
+  "title": "A token mistakenly sent to the contract before being whitelisted will be hard to recover",
+  "issueId": 232,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/232"
+}
