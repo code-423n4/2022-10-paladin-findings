@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "0xDjango",
+  "risk": "2",
+  "title": "Incorrect `minTargetVotes` allows for spam with 0 value",
+  "issueId": 191,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/191"
+}
