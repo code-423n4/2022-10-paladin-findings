@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "kb123",
+  "risk": "2",
+  "title": "# [KB123-M-1]. `return(timestamp / WEEK) * WEEK;` is in seconds instead of weeks.",
+  "issueId": 195,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/195"
+}
