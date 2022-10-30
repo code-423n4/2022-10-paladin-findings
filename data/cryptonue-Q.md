@@ -1,3 +1,27 @@
+# [L] Amount to delegate is not checked thoroughly
+
+in `_pledge()` internal function, the `amount` value is just check if it's not 0, but not being checked to at least to make the slope > 0 (in L:256), in other word if the amount is less than `boostDuration` value, it will make the slope 0.
+```
+File: WardenPledge.sol
+234:         if(endTimestamp > pledgeParams.endTimestamp || endTimestamp != _getRoundedTimestamp(endTimestamp)) revert Errors.InvalidEndTimestamp();
+
+237:         uint256 boostDuration = endTimestamp - block.timestamp;
+
+256:         uint256 slope = amount / boostDuration;
+257:         uint256 bias = slope * boostDuration;
+
+263:         uint256 totalDelegatedAmount = ((bias * boostDuration) + bias) / 2;
+264:         // Then we can calculate the total amount of rewards for this Boost
+265:         uint256 rewardAmount = (totalDelegatedAmount * pledgeParams.rewardPerVote) / UNIT;
+266: 
+267:         if(rewardAmount > pledgeAvailableRewardAmounts[pledgeId]) revert Errors.RewardsBalanceTooLow();
+268:         pledgeAvailableRewardAmounts[pledgeId] -= rewardAmount;
+269: 
+270:         // Send the rewards to the user
+271:         IERC20(pledgeParams.rewardToken).safeTransfer(user, rewardAmount);
+
+```
+
 # [NC] Typo
 
 Protocol vs Protocal
