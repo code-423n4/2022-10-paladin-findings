@@ -4,6 +4,7 @@
 | [L-02] | Redundant return value | 1 |
 | [L-03] | Incomplete documentation | 13 |
 | [L-04] | Wrong usage of NatSpec format comments | 24 |
+| [L-05] | Missing zero address checks in constructor | 1 |
 | [N-01] | A constant should be used instead of a magic value | 1 |
 | [N-02] | Documentation on obvious functions may be redundant | 2 |
 | [N-03] | Use native time unit rather than defining constants | 1 |
@@ -108,6 +109,12 @@ https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c72
 
 https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L55
 https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L66
+
+## [L-05] Missing zero address checks in constructor
+
+Specifically, `updateChest()` has a zero-address sanity check for `chestAddress`, however there is no such check in the constructor.
+
+https://github.com/code-423n4/2022-10-paladin/blob/d6d0c0e57ad80f15e9691086c9c7270d4ccfe0e6/contracts/WardenPledge.sol#L131-L143
 
 ## [N-01] A constant should be used instead of a magic value 
 
