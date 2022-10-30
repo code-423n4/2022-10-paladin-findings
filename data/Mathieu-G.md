@@ -72,3 +72,25 @@ Finally, the revert error name must be changed in this file: https://github.com/
     error NumberExceed88Bits();
 
 ## Contract Variables
+In addition to the use of a constant for the `minDelegationTime` variable, we can pack 2 variables into the same slot: `protocalFeeRatio` and `chestAddress`. The fee ratio is expressed in basis points and therefore will never exceed 10000, which means we can change its `uint256` type into an `uint96` (12 bytes). So the address and the uint96 will take one single full 32 bytes slot (20 + 12) instead of 2 slots.
+
+https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L71
+
+    /** @notice Address to receive protocol fees */
+    address public chestAddress;
+    /** @notice ratio of fees to pay the protocol (in BPS) */
+    uint96 public protocalFeeRatio = 250; //bps
+
+Of course, the update function of the `protocalFeeRatio` must be changed accordingly with this new variable type: https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L625:L631
+
+    function updatePlatformFee(uint96 newFee) external onlyOwner {
+        if(newFee > 500) revert Errors.InvalidValue();
+        uint96 oldfee = protocalFeeRatio;
+        protocalFeeRatio = newFee;
+
+        emit PlatformFeeUpdated(oldfee, newFee);
+    }
+
+Finally, the `PlatformFeeUpdated` definition must be updated : https://github.com/code-423n4/2022-10-paladin/blob/main/contracts/WardenPledge.sol#L117
+
+    event PlatformFeeUpdated(uint96 oldfee, uint96 newFee);
