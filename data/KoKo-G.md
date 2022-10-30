@@ -1,25 +1,5 @@
 # GAS ISSUES FOR [2022-10-PALADIN](https://github.com/code-423n4/2022-10-paladin)
 
-## [G-01] A < B + 1 is cheaper than A <= B
-
-./contracts/WardenPledge.sol
-
-```
-L223:  if(pledgeId >= pledgesIndex()) revert Errors.InvalidPledgeID();
-
-L229:  if(pledgeParams.endTimestamp <= block.timestamp) revert Errors.ExpiredPledge();
-
-L374:  if(pledgeId >= pledgesIndex()) revert Errors.InvalidPledgeID();
-
-L380:  if(pledgeParams.endTimestamp <= block.timestamp) revert Errors.ExpiredPledge();
-
-L420:  if(pledgeId >= pledgesIndex()) revert Errors.InvalidPledgeID();
-
-L426:  if(pledgeParams.endTimestamp <= block.timestamp) revert Errors.ExpiredPledge();
-
-L457:  if(pledgeId >= pledgesIndex()) revert Errors.InvalidPledgeID();
-```
-
 ## [G-02] Make `constant` and `immutable` variables `private` instead of `public`
 
 Description: Removes the getter function for this variable which saves gas. At the same time the variable get still be read from outside the contract
@@ -98,12 +78,4 @@ L241:  if(delegationBoost.allowance(user, address(this)) < amount) revert Errors
 L242:  if(delegationBoost.delegable_balance(user) < amount) revert Errors.CannotDelegate();
 L245:  if(delegationBoost.adjusted_balance_of(pledgeParams.receiver) + amount > pledgeParams.targetVotes) revert Errors.TargetVotesOverflow();
 L248:  delegationBoost.boost(
-```
-
-## [G-08] `uncheck` the `i++`/`i--` in for loops since there's no way to overflow/underflow
-
-./contracts/WardenPledge.sol
-
-```
-L550:  unchecked{ ++i; }
 ```
