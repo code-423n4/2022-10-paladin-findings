@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "wagmi",
+  "risk": "2",
+  "title": "Admin can drain any token with function `recoverERC20(...)`",
+  "issueId": 154,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/154"
+}
