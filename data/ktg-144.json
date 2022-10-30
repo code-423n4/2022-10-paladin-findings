@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "ktg",
+  "risk": "3",
+  "title": "Pledge creator can extend pledge without paying in edge cases.",
+  "issueId": 144,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/144"
+}
