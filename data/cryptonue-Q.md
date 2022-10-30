@@ -1,6 +1,6 @@
 # [L] Amount to delegate is not checked thoroughly
 
-in `_pledge()` internal function, the `amount` value is just check if it's not 0, but not being checked to at least to make the slope > 0 (in L:256), in other word if the amount is less than `boostDuration` value, it will make the slope 0.
+in `_pledge()` internal function, the `amount` value is only check if it's not 0, but not being checked to at least to make the slope > 0 (in L:256), in other word if the amount is less than `boostDuration` value, it will make the slope 0, when this slope is 0, the `bias`, `totalDelegatedAmount`, and `rewardAmount` will also 0, thus waste of gas for transferring 0 token reward.
 ```
 File: WardenPledge.sol
 234:         if(endTimestamp > pledgeParams.endTimestamp || endTimestamp != _getRoundedTimestamp(endTimestamp)) revert Errors.InvalidEndTimestamp();
