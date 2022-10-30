@@ -1,0 +1,8 @@
+{
+  "contest": 176,
+  "handle": "Jeiwan",
+  "risk": "2",
+  "title": "Reward can be over- or undercounted in `extendPledge` and `increasePledgeRewardPerVote`",
+  "issueId": 163,
+  "issueUrl": "https://github.com/code-423n4/2022-10-paladin-findings/issues/163"
+}
