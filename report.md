@@ -1,3 +1,11 @@
+---
+sponsor: "Paladin"
+slug: "2022-10-paladin"
+date: "2023-01-06"
+title: "Paladin - Warden Pledges contest"
+findings: "https://github.com/code-423n4/2022-10-paladin-findings/issues"
+contest: 176
+---
 
 # Overview
 
